@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Clicker Game 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+<audio id="game-music" autoplay loop>
+    <source src="game-music.mp3" type="audio/mpeg">
+    <!-- Aquí puedes añadir más fuentes de audio como <source> para otros formatos -->
+    Tu navegador no soporta audio HTML5.
+</audio>
+        <h1>Idle Clicker Game 2024</h1>
+        <div id="click-area">
+            <img src="hamtaro.png" alt="Hamtaro" id="hamster">
+        </div>
+        <p>Clicks: <span id="click-count">0</span></p>
+        <p>Hamster Level: <span id="hamster-level">1</span></p>
+        <button id="upgrade-button">Upgrade Click Power (Level: <span id="click-power-level">1</span>, Cost: <span id="upgrade-cost">10</span>)</button>
+        <button id="auto-clicker-button">Auto-Clicker (Level: <span id="auto-clicker-level">0</span>, Cost: <span id="auto-clicker-cost">50</span>)</button>
+        <button id="prestige-button">Prestige (Requires: 1000 clicks)</button>
+        <div id="prestige-info" style="display:none;">
+            <p>Prestige Points: <span id="prestige-points">0</span></p>
+            <button id="prestige-upgrade-button">Prestige Upgrade (Cost: <span id="prestige-upgrade-cost">5</span>)</button>
+        </div>
+        <div id="character-area">
+            <img src="character.png" alt="Character" id="character">
+        </div>
+        <p>Character Level: <span id="character-level">1</span></p>
+        <p>Character Experience: <span id="character-experience">0</span>/<span id="character-experience-needed">100</span></p>
+        <div id="upgrades">
+            <button id="buy-house-button">Buy House (Cost: <span id="house-cost">500</span>)</button>
+        </div>
+        <div id="statistics">
+            <h2>Statistics</h2>
+            <p>Total Clicks: <span id="total-clicks">0</span></p>
+            <p>Total Upgrades: <span id="total-upgrades">0</span></p>
+        </div>
+        <div id="ranking">
+            <h2>Ranking</h2>
+            <ol id="ranking-list">
+                <!-- Ranking items will be added here dynamically -->
+            </ol>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
